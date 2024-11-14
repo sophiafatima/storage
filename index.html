@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Feito por Sophia de Fátima Simões Almeida - 42 - 2E1 -->
+
+    <main>
+        <div id="nome">
+            <div>Nome</div>
+            <div class="right-box"><input type="text"></div>
+        </div>
+        <div>
+            <div>Endereço</div>
+            <div class="right-box"><input type="text"></div>
+        </div>
+        <div>
+            <div>CEP</div>
+            <div class="right-box"><input type="text" placeholder="xx.xxx-xxx" id="cep" oninput="mascara_cep()" maxlength="10"></div>
+        </div>
+        <div >
+            <div>CPF</div>
+            <div class="right-box"><input type="text" placeholder="xxx.xxx.xxx-xx" id="cpf" oninput="mascara_cpf()" maxlength="14"></div>
+        </div>
+        <div>
+            <div>Telefone</div>
+            <div class="right-box"><input type="tel" placeholder="(xx)xxxxx-xxxx" id="telefone" oninput="mascara_telefone()" maxlength="14"></div>
+        </div>
+        <div >
+            <div>CNPJ</div>
+            <div class="right-box"><input type="text" placeholder="XX.XXX.XXX/0001-XX" id="cnpj" oninput="mascara_cnpj()" maxlength="18"></div>
+        </div>
+        <div>
+            <div>Código</div>
+            <div class="right-box"><input type="text" placeholder="xx-xx//xxx-xxx.9.xxx" id="codigo" oninput="mascara_codigo()" maxlength="20">
+            </div>
+        </div>
+
+        <div>
+            <div><button><a href="confirmacao.html">Enviar</a></button></div>
+        </div>
+    </main>
+
+    <script src="script.js"> </script>
+</body>
+
+</html>
